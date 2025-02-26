@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trippy Hippie - Premium Mushroom Cultures</title>
+    <style>
+        :root {
+            --primary: #3a7d44;
+            --secondary: #6a994e;
+            --accent: #bc6c25;
+            --light: #f2f4f3;
+            --dark: #1a1a1a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        nav {
+            background-color: var(--secondary);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--accent);
+        }
+        
+        .hero {
+            height: 50vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/600') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #a35a1e;
+            transform: translateY(-3px);
+        }
+        
+        .products {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .products h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+        
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: 300px;
+            height: 100%;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .product-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        .product-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .product-description {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .about {
+            background-color: var(--secondary);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .about p {
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🍄 Trippy Hippie 🍄</div>
+        <div class="tagline">Premium Mushroom Cultures for Enthusiasts</div>
+    </header>
+    
+    <nav>
+        <a href="#products">Shop</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section class="hero">
+        <h1>Cultivate Your Experience</h1>
+        <p>Premium quality mushroom cultures for researchers, mycologists, and enthusiasts.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+    
+    <section id="products" class="products">
+        <h2>Our Premium Cultures</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="/api/placeholder/300/200" alt="Jedi Mind Fuck Albino Culture" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Jedi Mind Fuck Albino</h3>
+                    <p class="product-price">$25.00</p>
+                    <p class="product-description">A rare and powerful strain known for its distinctive albino appearance and potent characteristics. Perfect for experienced cultivators and collectors.</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="/api/placeholder/300/200" alt="Penis Envy Culture" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Penis Envy</h3>
+                    <p class="product-price">$20.00</p>
+                    <p class="product-description">One of the most sought-after strains in the mycology community. Known for its unique appearance and exceptional qualities for research purposes.</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>About Trippy Hippie</h2>
+        <p>Founded by passionate mycologists, Trippy Hippie is dedicated to providing the highest quality mushroom cultures for research and educational purposes.</p>
+        <p>Our team carefully cultivates each strain in sterile laboratory conditions to ensure you receive contamination-free, viable cultures every time.</p>
+        <p>We believe in the power of mycology to expand our understanding of nature and are committed to supporting the community of researchers and enthusiasts.</p>
+    </section>
+    
+    <footer id="contact">
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">FAQ</a>
+            <a href="mailto:info@trippyhippie.com">Contact Us</a>
+        </div>
+        <p>&copy; 2025 Trippy Hippie. All rights reserved.</p>
+        <p><small>For research purposes only. Not for human consumption.</small></p>
+    </footer>
+</body>
+</html>
